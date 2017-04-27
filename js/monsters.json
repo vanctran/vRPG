@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Rat",
+      "stats": {
+        "level": 1,
+        "health": 35,
+        "mana": 10,
+        "attack": 9,
+        "armor": 3,
+        "experience": 18
+      },
+      "loot": [
+        "Iron Dagger",
+        "Leather Gloves",
+        "Leather Boots"
+      ]
+    },
+    {
+      "name": "Goblin",
+      "stats": {
+        "level": 2,
+        "health": 55,
+        "mana": 0,
+        "attack": 17,
+        "armor": 5,
+        "experience": 27
+      },
+      "loot": [
+        "Iron Sword",
+        "Iron Axe",
+        "Leather Cloak",
+        "Leather Helmet"
+      ]
+    }
+]
