@@ -15,6 +15,7 @@ var $monster = $("#monster");
 var $start = $("#start");
 var $attack = $("#attack");
 var $body = $("#body");
+var $inventory = $("#inventory");
 var playerInfo = {
     name: "Hero",
     stats: {
@@ -28,9 +29,11 @@ var playerInfo = {
 };
 var player = new Player(playerInfo);
 var inventory = new Inventory({
-    Sword: "Sword",
-    Shield: "Shield"
+    Sword: {name: "Sword"},
+    Shield: {name: "Shield"}
 });
+
+$inventory.html(inventory.getHTML());
 
 $player.html(player.getHTML());
 

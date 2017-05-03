@@ -26,6 +26,18 @@ Inventory.prototype.display = function () {
     }
 };
 
+//Generates the HTML for the inventory
+Inventory.prototype.getHTML = function () {
+    var items = this.items;
+    var htmlString = '<ol>';
+    for(var i = 0; i < items.length; ++i) {
+        htmlString += '<li>';
+        htmlString += items[i].name;
+        htmlString += '</li>';
+    }
+    return htmlString += '</ol>';
+};
+
 //Searches inventory to see if it has an item
 Inventory.prototype.has = function (item) {
     var inventory = this.items;
