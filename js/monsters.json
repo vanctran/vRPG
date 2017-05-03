@@ -7,7 +7,7 @@
         "mana": 10,
         "attack": 9,
         "armor": 3,
-        "experience": 18
+        "experience": 13
       },
       "loot": [
         "Iron Dagger",
@@ -23,7 +23,7 @@
         "mana": 0,
         "attack": 17,
         "armor": 5,
-        "experience": 27
+        "experience": 20
       },
       "loot": [
         "Iron Sword",

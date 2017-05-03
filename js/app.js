@@ -1,6 +1,6 @@
+var monsterLoader = new MonsterLoader();
 var getMonster = monsterLoader.getMonster;
 var monsterList = ['Goblin', 'Rat', 'Rat'];
-
 var playerInfo = {
     name: "Hero",
     stats: {
@@ -12,8 +12,11 @@ var playerInfo = {
         experience: 0
     }
 };
-
 var player = new Player(playerInfo);
+var inventory = new Inventory({
+    Sword: "Sword",
+    Shield: "Shield"
+});
 $('#player').html(player.getHTML());
 
 var monster;

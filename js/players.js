@@ -31,7 +31,6 @@ BattleUnit.prototype.getHTML = function () {
     htmlString += 'Attack: ' + this.attack + '<br>';
     htmlString += 'Armor: ' + this.armor + '<br>';
     htmlString += 'Experience: ' + this.experience + '<br>';
-    console.log(htmlString);
     return htmlString;
 };
 
