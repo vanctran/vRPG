@@ -1,5 +1,13 @@
 var monsterLoader = new MonsterLoader();
 var getMonster = monsterLoader.getMonster;
+var itemLoader = new ItemLoader();
+var equipment = {
+    Weapon: {},
+    Helmet: {},
+    Chestplate: {},
+    Gloves: {},
+    Boots: {}
+};
 var monsterList = ['Goblin', 'Rat', 'Rat'];
 var monster;
 var $player = $("#player");

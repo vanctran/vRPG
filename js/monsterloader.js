@@ -5,7 +5,7 @@
 function MonsterLoader () {
     var list = [];
     var stateText = "loading";
-    console.log("Loading...");
+    console.log("Loading Monsters...");
     $.ajax({
         method: "GET",
         url: "js/monsters.json",

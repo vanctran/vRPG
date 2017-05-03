@@ -1,52 +1,71 @@
 [
   {
-    "Potions": {
-      "Small Health Potion": {
-        "Description": "Restores a small amount of health",
-        "Effect": ["RestoreHP", 15]
-      },
-      "Small Mana Potion": {
-        "Description": "Restores a small amount of mana.",
-        "Effect": ["RestoreMP", 10]
-      }
-    },
-    "Weapons": {
-      "Iron Dagger": {
+      "Potions": [
+        {
+          "Name": "Small Health Potion",
+          "Description": "Restores a small amount of health",
+          "Effect": [
+            "RestoreHP",
+            15
+          ]
+        },
+        {
+          "Name": "Small Mana Potion",
+          "Description": "Restores a small amount of mana.",
+          "Effect": [
+            "RestoreMP",
+            10
+          ]
+        }
+      ]
+  },
+  {
+    "Weapons": [
+      {
+        "Name": "Iron Dagger",
         "Attack": 4,
         "Speed": 5.5,
         "Armor": 0,
         "Description": "A beginner's dagger..."
       },
-      "Iron Sword": {
+      {
+        "Name": "Iron Sword",
         "Attack": 5.5,
         "Speed": 4,
         "Armor": 0,
         "Description": "A beginner's sword..."
       },
-      "Iron Axe": {
+      {
+        "Name": "Iron Axe",
         "Attack": 7,
         "Speed": 2.5,
         "Armor": 0,
         "Description": "A beginner's axe..."
       }
-    },
-    "Armor": {
-      "Leather Cloak": {
+    ]
+  },
+  {
+    "Armor": [
+      {
+        "Name": "Leather Cloak",
         "Armor": 2,
         "Description": "Copped from SupremeNewYork."
       },
-      "Leather Boots": {
+      {
+        "Name": "Leather Boots",
         "Armor": 0.75,
         "Description": "Can't afford Yeezys."
       },
-      "Leather Gloves": {
+      {
+        "Name": "Leather Gloves",
         "Armor": 0.5,
         "Description": "Oven mitts."
       },
-      "Leather Helmet": {
+      {
+        "Name": "Leather Helmet",
         "Armor": 1.25,
         "Description": "Always wear a helmet."
       }
-    }
+    ]
   }
 ]
