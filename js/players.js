@@ -41,12 +41,10 @@ BattleUnit.prototype.takeDamage = function(damage) {
     console.log(this.name + " takes " + totalDamage + " damage.");
     if(totalDamage > this.health) {
         this.health = 0;
-        console.log(this.name + " takes " + totalDamage + " damage!");
         console.log(this.name + " has been slain!");
     }
     else if(totalDamage > 0) {
         this.health -= totalDamage;
-        console.log(this.name + " takes " + totalDamage + " damage!");
     }
 };
 
