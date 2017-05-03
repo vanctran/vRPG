@@ -29,10 +29,20 @@ Inventory.prototype.display = function () {
 //Searches inventory to see if it has an item
 Inventory.prototype.has = function (item) {
     var inventory = this.items;
-    return inventory.indexOf(item) >= 0;
+    return inventory.indexOf(item);
+};
+
+//Inserts an item to the inventory
+Inventory.prototype.insert = function (item) {
+    var inventory = this.items;
+    inventory.push(item);
 };
 
 //Drops the item from the inventory
 Inventory.prototype.drop = function (item) {
     var inventory = this.items;
-}
+    var index = this.has(item);
+    if(index > -1) {
+        inventory = inventory.splice(index, 1);
+    }
+};

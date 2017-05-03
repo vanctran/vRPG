@@ -1,6 +1,7 @@
 var monsterLoader = new MonsterLoader();
 var getMonster = monsterLoader.getMonster;
 var monsterList = ['Goblin', 'Rat', 'Rat'];
+var monster;
 var playerInfo = {
     name: "Hero",
     stats: {
@@ -17,9 +18,8 @@ var inventory = new Inventory({
     Sword: "Sword",
     Shield: "Shield"
 });
-$('#player').html(player.getHTML());
 
-var monster;
+$('#player').html(player.getHTML());
 
 //Generates a new opponent from a monster name
 $('#start').hide().on('click', function() {
