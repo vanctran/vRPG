@@ -31,7 +31,6 @@ BattleUnit.prototype.getHTML = function () {
     htmlString += 'Attack: ' + this.attack + '<br>';
     htmlString += 'Armor: ' + this.armor + '<br>';
     htmlString += 'Experience: ' + this.experience + '<br>';
-    console.log(htmlString);
     return htmlString;
 };
 
@@ -42,12 +41,10 @@ BattleUnit.prototype.takeDamage = function(damage) {
     console.log(this.name + " takes " + totalDamage + " damage.");
     if(totalDamage > this.health) {
         this.health = 0;
-        console.log(this.name + " takes " + totalDamage + " damage!");
         console.log(this.name + " has been slain!");
     }
     else if(totalDamage > 0) {
         this.health -= totalDamage;
-        console.log(this.name + " takes " + totalDamage + " damage!");
     }
 };
 

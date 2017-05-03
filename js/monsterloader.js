@@ -16,7 +16,6 @@ function MonsterLoader () {
             for(var i = 0; i < data.length; ++i) {
                 list.push(data[i]);
             }
-            console.log(list.length);
             stateText = "loaded";
             $("#start").show();
         },
@@ -25,15 +24,8 @@ function MonsterLoader () {
         }
 
     });
-    // $.getJSON("js/monsters.json", function(json) {
-    //         for(var i = 0; i < json.length; ++i) {
-    //             list.push(json[i]);
-    //         }
-    //         console.log(list.length);
-    //         stateText = "loaded";
-    //         $("#start").show();
-    // });
 
+    //Retrieves monster from the loader
     this.getMonster = function(name) {
         console.log(name);
         console.log(list.length);
@@ -44,14 +36,13 @@ function MonsterLoader () {
         }
     };
 
+    //Displays the monsters in the loader
     this.displayMonsters = function() {
         for(var j = 0; j < list.length; ++j) {
             console.log(list[j]);
         }
     };
 }
-
-var monsterLoader = new MonsterLoader();
 
 
 
